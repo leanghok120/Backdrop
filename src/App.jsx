@@ -20,9 +20,9 @@ function App() {
   }
 
   return (
-    <div className="h-screen bg-gruvbox-bg text-gruvbox-fg p-8">
-      <h1 className="font-black text-5xl">Backdrop</h1>
-      <div className="mt-10 grid grid-cols-3 gap-5">
+    <div className="min-h-screen bg-gruvbox-bg text-gruvbox-fg p-8">
+      <h1 className="font-black text-4xl sm:text-5xl">Backdrop</h1>
+      <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
         {wallpapers.map((wallpaper) => (
           <WallpaperCard key={wallpaper.$id} image={wallpaper} />
         ))}

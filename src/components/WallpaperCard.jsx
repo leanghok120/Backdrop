@@ -22,7 +22,7 @@ function WallpaperCard({ image }) {
     <img
       src={image.url}
       alt={image.name}
-      className="max-w-[500px] object-cover rounded-xl hover:scale-105 transition-all cursor-pointer"
+      className="sm:max-w-96 md:max-w-[500px] object-cover rounded-xl hover:scale-105 transition-all cursor-pointer"
       onClick={downloadWallpaper}
     />
   );
