@@ -24,11 +24,7 @@ function App() {
       <h1 className="font-black text-5xl">Backdrop</h1>
       <div className="mt-10 grid grid-cols-3">
         {wallpapers.map((wallpaper) => (
-          <WallpaperCard
-            key={wallpaper.$id}
-            imageUrl={wallpaper.url}
-            imageName={wallpaper.name}
-          />
+          <WallpaperCard key={wallpaper.$id} image={wallpaper} />
         ))}
       </div>
     </div>
